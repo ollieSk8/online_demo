@@ -110,8 +110,8 @@ function createCar(speed,cxt,dom) {
             o.downHinder(); // 落下障碍物
             o.clearHander(); // 清除已通过的障碍物
             if(o.hinder[o.curdir.x/100][0].hinder === 1 && o.hinder[o.curdir.x/100][0].y + 100 >= o.curdir.y){
-                // alert('你挂了');
-                // return;
+                alert('你挂了');
+                return;
             }
             o.scroll = o.scroll + 5; // 单位下滑速度
             // console.log(o.scroll % 300)
